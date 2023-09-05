@@ -1,0 +1,24 @@
+one offer has many panels
+one panel has many parts [MCC, ACCB, MCCB]
+one part has many components [incomer, delta starter]
+
+one component has many sub-components [LED, rotor handle....]
+
+one sub-component has many catalog_no
+one catalog_no has many rating [250A, 210A]
+one rating has one Make_company,price, discount
+
+offer :{
+
+    panels:{
+        name:{},
+        parts:{
+
+            component:{
+                name:{},
+                sub-component:[{id}]
+            }
+        },
+    }
+}
+

@@ -41,10 +41,12 @@ const subComponentRoutes = require('./routes/SubComponentRoutes')
 app.use(base_url+'/subcomponent',subComponentRoutes)
 
 const project_offerRoutes=require('./models/offer_projectSchema');
-app.use(base_url+'/project_offer')
+app.use(base_url+'/project_offer',project_offerRoutes)
 
+const drawingRoutes=require('./routes/drawingRoutes')
+app.use(base_url+'/drawing',drawingRoutes)
 
-
-app.listen(process.env.PORT, () => {
-    console.log("server listen on port no ", process.env.PORT);
+const PORT=process.env.PORT || 3000
+app.listen(PORT , () => {
+    console.log("server listen on port no ", PORT);
 })

@@ -5,7 +5,7 @@ import "../assets/css/main/app-dark.css";
 import "../assets/css/shared/iconly.css";
 // import MyChart from './MyChart';
 
-export const Deshboard = () => {
+export const    Deshboard = () => {
 
     return (
         <>
@@ -299,7 +299,7 @@ export const Deshboard = () => {
                             </div> */}
                             <div className="float-end">
                                 <p>
-                                    Maked by{" "}
+                                    Made by{" "}
                                     <span className="text-danger">
                                         <i className="bi bi-heart" />
                                     </span>{" "}

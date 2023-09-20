@@ -46,6 +46,12 @@ app.use(base_url+'/project_offer',project_offerRoutes)
 const drawingRoutes=require('./routes/drawingRoutes')
 app.use(base_url+'/drawing',drawingRoutes)
 
+const storeRoutes=require('./routes/storeRoutes')
+app.use(base_url+'/store',storeRoutes)
+
+const vendorRoutes=require('./routes/vendorRoutes')
+app.use(base_url+'/vendor',vendorRoutes)
+
 const PORT=process.env.PORT || 3000
 app.listen(PORT , () => {
     console.log("server listen on port no ", PORT);

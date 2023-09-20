@@ -2,36 +2,23 @@ const mongoose = require("mongoose")
 const scehma=mongoose.Schema
 
 const storeSchema = new mongoose.Schema({
-    // desc: {
-    //     type: String,
-    //     required: true,
-    //     message: "Name is required.",
+    // subComponentId:{
+    //     type:scehma.Types.ObjectId,
+    //     ref:'subcomponent',
+    //     unique:true
     // },
-
-    // catalog_number: {
-    //     type: String,
-    //     required: false,
-    // },
-
-    // rating_value: {
-    //     type: String,
-    //     required: false,
-    // },
-
-
-    // company_name: {
-    //     type: Schema.Types.ObjectId,
-    //     ref: "Companies",
-    // },
-
-    // quantity: {
-    //     type: Number,
-    //     default: 1,
-    // },
-    subComponentId:{
+    desc:{
+        type:"String"
+    },
+    catalog_number:{
+        type:"String",
+    },
+    rating_value:{
+        type:"String"
+    },
+    companyId:{
         type:scehma.Types.ObjectId,
-        ref:'subcomponent',
-        unique:true
+        ref:'company'
     },
     quantity:{
         type:"Number",

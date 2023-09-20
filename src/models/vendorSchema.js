@@ -40,4 +40,4 @@ const vendorSchema=new schema({
     }
 })
 
-exports=mongoose.model('vendor',vendorSchema)
+module.exports=mongoose.model('vendor',vendorSchema)

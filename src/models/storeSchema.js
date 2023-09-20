@@ -30,7 +30,8 @@ const storeSchema = new mongoose.Schema({
     // },
     subComponentId:{
         type:scehma.Types.ObjectId,
-        ref:'subcomponent'
+        ref:'subcomponent',
+        unique:true
     },
     quantity:{
         type:"Number",
